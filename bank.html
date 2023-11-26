@@ -17,15 +17,15 @@
       <div class="grid grid-cols-3 gap-2">
         <div class="bg-green-600 p-6 rounded text-white font-bold">
           <h4 class="text-1xl">Deposit Total</h4>
-          <h4 class="text-1xl">$00</h4>
+          <h4 class="text-3xl">$<span id="previous-deposit-text">00</span></h4>
         </div>
         <div class="bg-yellow-600 p-6 rounded text-white font-bold">
           <h4 class="text-1xl">Withdraw Total</h4>
-          <h4 class="text-1xl">$00</h4>
+          <h4 class="text-3xl">$00</h4>
         </div>
         <div class="bg-purple-600 p-6 rounded text-white font-bold">
           <h4 class="text-1xl">Balance Total</h4>
-          <h4 class="text-1xl">$00</h4>
+          <h4 class="text-3xl">$<span id="balance-total">1240</span></h4>
         </div>
       </div>
       <div class="grid grid-cols-2 gap-2 mt-5">
@@ -41,7 +41,7 @@
             placeholder="Deposit Amount "
           />
           <button
-            id="btn-submit"
+            id="btn-deposit"
             class="block bg-purple-600 text-white px-4 py-2 font-semibold rounded"
           >
             Deposit
@@ -54,7 +54,7 @@
           <input
             type="text"
             name=""
-            id="Withdraw"
+            id="Withdraw-field"
             class="mb-2 rounded px-2"
             placeholder="Withdraw Amount "
           />
