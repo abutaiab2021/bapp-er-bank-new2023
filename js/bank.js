@@ -31,6 +31,13 @@ document.getElementById("btn-discount").addEventListener("click", function () {
   window.location = "discount.html";
 });
 
+// going to discount form
+document
+  .getElementById("btn-texteditor")
+  .addEventListener("click", function () {
+    window.location = "texteditor.html";
+  });
+
 // exit bank from
 document.getElementById("btn-exit").addEventListener("click", function () {
   window.location = "index.html";

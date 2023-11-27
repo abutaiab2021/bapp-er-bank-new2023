@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/f17682e672.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h2 class="text-3xl text-center font-bold mt-5">
+        Welcome
+        <span class="text-purple-700">To My Text Editor</span>!!!
+      </h2>
+    </header>
+    <main>
+      <div class="w-2/4 p-20 mt-10 bg-sky-400 mx-auto">
+        <button
+          class="mb-2 bg-red-600 text-white px-4 py-2 font-semibold rounded"
+        >
+          <i class="fa-solid fa-bold"></i>
+        </button>
+        <button
+          class="mb-2 bg-red-600 text-white px-4 py-2 font-semibold rounded"
+        >
+          <i class="fa-solid fa-italic"></i>
+        </button>
+        <button
+          class="mb-2 bg-red-600 text-white px-4 py-2 font-semibold rounded"
+        >
+          <i class="fa-solid fa-underline"></i>
+        </button>
+
+        <button
+          class="mb-2 bg-purple-600 text-white px-4 py-2 font-semibold rounded"
+        >
+          <i class="fa-solid fa-align-left"></i>
+        </button>
+        <button
+          class="mb-2 bg-purple-600 text-white px-4 py-2 font-semibold rounded"
+        >
+          <i class="fa-solid fa-align-right"></i>
+        </button>
+        <button
+          class="mb-2 bg-purple-600 text-white px-4 py-2 font-semibold rounded"
+        >
+          <i class="fa-solid fa-align-center"></i>
+        </button>
+        <input
+          class="mb-2 text-black px-4 py-2 font-semibold rounded"
+          type="number"
+          id="quantity"
+          name="quantity"
+          min="1"
+          max="5"
+        />
+        <input
+          class="mb-2 bg-orange-600 text-black px-4 py-4 font-semibold rounded"
+          type="color"
+          id="myColor"
+        />
+        <textarea
+          class="rounded border-2 border-orange-800 px-2 py-2"
+          name=""
+          id=""
+          cols="60"
+          rows="10"
+        ></textarea>
+
+        <button
+          id="btn-exit"
+          class="block bg-red-600 hover:bg-sky-700 text-white px-4 py-2 font-semibold rounded"
+        >
+          <i class="fa-solid fa-square-left"></i>
+          Exit
+        </button>
+      </div>
+    </main>
+    <script src="js/texteditor.js"></script>
+  </body>
+</html>
