@@ -25,3 +25,13 @@ document.getElementById("btn-deposit").addEventListener("click", function () {
 
   depositField.value = "";
 });
+
+// going to discount form
+document.getElementById("btn-discount").addEventListener("click", function () {
+  window.location = "discount.html";
+});
+
+// exit bank from
+document.getElementById("btn-exit").addEventListener("click", function () {
+  window.location = "index.html";
+});

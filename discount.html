@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Info</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h2 class="text-3xl text-center font-bold mt-5">
+        Let's Discount and Copon Code Discount Some
+        <span class="text-purple-700">Moooooooney</span>!!!
+      </h2>
+    </header>
+    <main class="w-2/4 mx-auto text-enter mt-10">
+      <div class="grid grid-cols-2 gap-2 mt-5">
+        <div class="bg-pink-500 p-6 rounded">
+          <h4 class="text-white mb-2 font-bold text-1xl">
+            Please Show Discount Amount (30%)
+          </h4>
+          <h4 class="text-white mb-2 font-bold text-1xl">
+            Price :$ <span id="price-discount">1000</span>
+          </h4>
+          <button
+            id="btn-discount"
+            class="block bg-purple-600 text-white px-4 py-2 font-semibold rounded"
+          >
+            Discount
+          </button>
+          <h4 class="text-white mb-2 font-bold text-1xl">
+            Pay Amount : $<span id="pay-amount">00</span>
+          </h4>
+        </div>
+        <div class="bg-sky-500 p-6 rounded">
+          <h4 class="text-white mb-2 font-bold text-1xl">
+            Discount Amount With Copon
+          </h4>
+          <h4 class="text-white mb-2 font-bold text-1xl">
+            Price : $<span id="price-copon-amount">1000</span>
+          </h4>
+          <input
+            type="text"
+            name=""
+            id="copon-field"
+            class="mb-2 rounded px-2"
+            placeholder="Copon Code "
+          />
+          <button
+            id="btn-copon"
+            class="bg-pink-600 text-white px-4 py-2 font-semibold rounded"
+          >
+            Discount Copon
+          </button>
+          <button
+            id="btn-exit"
+            class="bg-red-600 text-white px-4 py-2 font-semibold rounded"
+          >
+            Exit
+          </button>
+          <h4 class="text-white mb-2 font-bold text-1xl">
+            Pay Amount : $<span id="copon-pay-amount">00</span>
+          </h4>
+        </div>
+      </div>
+    </main>
+    <script src="js/discount.js"></script>
+  </body>
+</html>
